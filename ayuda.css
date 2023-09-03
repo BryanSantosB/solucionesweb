@@ -1,0 +1,11 @@
+    .fondo{
+        background-color: black;
+    }
+    .icono{
+        color: red;
+    }
+    .imagen{
+        width: 40 px;
+        height: 40px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    }
