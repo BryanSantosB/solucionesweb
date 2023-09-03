@@ -1,0 +1,319 @@
+/*Importamos la fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+
+
+
+/*:::::::::::::::::::::::::::::::::::NAVBAR:::::::::::::::::::::::::::::::::::*/
+/*Damos estilo a todos los elementos. (relleno 0, margen 0, fuente, etc)*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+}
+
+i svg{
+    width: 100%;
+}
+
+/*Damos color al fondo*/
+body{
+    background-color: #FAFAFA;
+}
+
+.label{
+    display: inline-block;
+}
+
+/*Damos posicionamiento al contenedor del nav y sus elementos internnos*/
+.contenedor-nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #0F0F0F;
+    color: hsl(0, 0%, 100%);
+    z-index: 1000;
+}
+
+/*Damos ancho a ciertos elementos utilizando selectores*/
+.lista-enlaces li > label,
+.lista-enlaces li > a,
+.log-Reg a{
+    font-weight: 600;
+}
+
+/*Brindamos estilos a hover de algunos elementos*/
+.contenedor-nav a:visited{
+    color: hsl(0, 0%, 41%);
+}
+
+.contenedor-nav select{
+    color: hsl(0, 0%, 41%);
+}
+
+.contenedor-nav a:hover{
+    color: white;
+}
+
+.contenedor-nav label{
+    width: auto;
+    display: inline-flex;
+}
+
+.contenedor-nav label:hover{
+    transform: scale(1.1);
+    transition: all .05s;
+}
+
+/*Estilos del boton register*/
+#btn-register{
+    padding: 5px 20px;
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+}
+
+/*Centramos y damos espacioado al contenido de enlaces*/
+.contenedor-enlaces{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 40px;
+    flex-direction: row;
+}
+
+/*Centramos el contenido*/
+.contenedor-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 130px;
+}
+
+/*Centramos el contenido y damos espaciado*/
+.lista-enlaces{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+}
+
+/*Posición relativa*/
+.lista-enlaces li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Escondemos checks de selectores*/
+.select-check{
+    display: none;
+}
+
+/*Damos estilo al contenedor de las opciones de los selectores*/
+.caja-select{
+    position: absolute;
+    top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,.05);
+    display: none;
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+/*Selector para ancho, margen y display del elemento a*/
+.caja-select a{
+    display: block;
+    width: auto;
+    margin: 15px;
+}
+
+/*Para que el posicionamiento inicie desde la derecha*/
+#caja1{
+    right: 0;
+}
+
+/*que inicie desde la izquierda */
+#caja2{
+    left: 0;
+}
+
+/*Ocultamos íconos de selectores*/
+#i-2-1{
+    display: none;
+}
+
+#i-2-2{
+    display: none;
+}
+
+/*Ocultamos el check del nav responsive*/
+#check-res{
+    display: none;
+}
+
+/*Contenedor de caja de selector*/
+.opcion{
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.opcion i{
+    color: black;
+    margin-right: 10px;
+}
+
+.opcion a{
+    color: black;
+    text-align: left;
+}
+
+/*Contenedores para separar los íconos del texto y centrar*/
+.con-i{
+    width: 30%;
+    text-align: center;
+    color: black;
+    margin-right: 10px;
+}
+
+.con-a{
+    width: 70%;
+    text-align: left;
+}
+
+/*Damnos margen a la derecha del contenedor logo*/
+.contenedor-logo{
+    margin-right: 70px;
+}
+
+/*Tamaño de imagen*/
+.logo img{
+    width: 20%;
+    min-width: 120px;
+}
+
+/*Centramos y separamos en contenido del div log-Reg*/
+.log-Reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.check-responsive{
+    display: none;
+}
+
+.check-responsive{
+    color: white;
+    font-size: 25px;
+}
+
+/*Creamos un div que ocupe toda la pantalla y le damos transición y un color oscuro, 
+lo ocultamos y solo se mostrará cuando el el check del nev se active para mostrar las 
+opciones del nav (móvil)*/
+.oscurecer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: all 0.3;
+    z-index: 700; 
+}
+
+/*Ocultamos ícono de X*/
+.cerrar{
+    display: none;
+}
+
+
+/*Responsive Móvil*/
+@media screen and (max-width: 767px) {
+    .contenedor-enlaces{
+        display: block;
+        position: fixed;
+        background-color: white;
+        color: hsl(0, 0%, 41%);
+        flex-direction: column;
+        left: -100%;
+        top: 0;
+        width: 55%;
+        height: 100vh;
+        /*transition: all 0.3s;*/
+    }
+
+    .lista-enlaces{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .log-Reg{
+        flex-direction: column;
+    }
+
+    .check-responsive{
+        display: block;
+    }
+
+    .cerrar{
+        display: block;
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .caja-select{
+        position: relative;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .lista-enlaces li{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .log-Reg{
+        margin-top: 40px;
+    }
+
+    .con-a a{
+        margin: 10 !important;
+    }
+
+    #btn-register{
+        width: 80%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-nav label{
+        width: auto;
+    }
+
+}

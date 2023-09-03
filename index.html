@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/estilos.css">
+    <title>Inicio</title>
+</head>
+<body>
+    
+
+    <!--NavBar-->
+    <header>
+        <nav class="contenedor-nav">
+            
+            <!--Logo-->
+            <div class="contenedor-logo">
+                <a class="logo">
+                    <img src="public/img/logo.png" alt="LogoFlash">
+                </a>
+            </div>
+
+            <!--Contenedor de logo y enlaces-->
+            <div class="contenedor-enlaces" id="contenedor-en">
+                <!--X para cerrar-->
+                <div class="cerrar">
+                    <label for="check-res">
+                        <i>
+                            <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"/><path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"/></g></svg>
+                        </i>
+                    </label>
+                </div>
+                <!--Enlaces-->
+                <ul class="lista-enlaces">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Promociones</a></li>
+                    <li>
+                        <label for="check-1">
+                            Categorías
+                            <i id="i-1-1">
+                                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                            </i>
+                            <i id="i-2-1">
+                                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
+                            </i>
+                        </label>
+                        <input type="checkbox" id="check-1" class="select-check">
+                        <div id="caja1" class="caja-select">
+                            <div class="opcion">
+                                <i class="fa-solid fa-y"></i>
+                                <a href="">categoria</a>
+                            </div>
+                            <div class="opcion">
+                                <i class="fa-solid fa-y"></i>
+                                <a href="">categoria</a>
+                            </div>
+                            <div class="opcion">
+                                <i class="fa-solid fa-y"></i>
+                                <a href="">categoria</a>
+                            </div>
+                            <div class="opcion">
+                                <i class="fa-solid fa-y"></i>
+                                <a href="">categoria</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="check-2">
+                            Información
+                            <i id="i-1-2">
+                                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                            </i>
+                            <i id="i-2-2">
+                                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
+                            </i>
+                        </label>
+                            
+                        <input type="checkbox" id="check-2" class="select-check">
+                        <div id="caja2" class="caja-select">
+                            <a href="">Nosotros</a>
+                            <a href="">Contacto</a>
+                            <a href="">Acerca de</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!--Login y Register-->
+                <div class="log-Reg">
+                    <a href="">Login</a>
+                    <a id="btn-register" href="">Register</a>
+                </div>
+            </div>
+            <div class="check-responsive">
+                <label for="check-res">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </i>
+                </label>
+                <input type="checkbox" id="check-res">
+            </div>
+        </nav>
+    </header>
+
+    <div class="oscurecer" id="oscuro"></div>
+
+
+    <script src="https://kit.fontawesome.com/a7fc31cc6a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="public/js/script-index.js"></script>
+
+</body>
+</html>
