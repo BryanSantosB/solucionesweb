@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
     <title>Inicio</title>
 </head>
 <body>
@@ -24,6 +29,9 @@
             <div class="contenedor-enlaces" id="contenedor-en">
                 <!--X para cerrar-->
                 <div class="cerrar">
+                    <a class="logo ancho-log-mv">
+                        <img src="public/img/logo.png" alt="LogoFlash">
+                    </a>
                     <label for="check-res">
                         <i>
                             <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"/><path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"/></g></svg>
@@ -93,19 +101,79 @@
             <div class="check-responsive">
                 <label for="check-res">
                     <i>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                    </i>
+                        <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg></i>
                 </label>
                 <input type="checkbox" id="check-res">
             </div>
         </nav>
     </header>
 
+    <!--Efecto de oscurecer pantalla (Móvil)-->
     <div class="oscurecer" id="oscuro"></div>
+
+    <!--Slider-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="public/img/img-slider-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="public/img/img-slider-2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="public/img/img-slider-3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Enlcaces -->
+    <div class="enlaces">
+        <a class="centrar" href="https://www.instagram.com/stories/highlights/17860192214726077/?hl=es" target="_blank">
+            <i class="fa-solid fa-book fa-2x"></i>
+            <p>CARTA</p>
+        </a>
+
+        <a class="centrar" href="https://www.instagram.com/stories/highlights/18283509283067444/?hl=es" target="_blank">
+            <i class="fa-solid fa-burger fa-2x"></i>
+            <p>GALERÍA</p>
+        </a>
+
+        <a class="centrar" href="https://www.instagram.com/stories/highlights/18291927757062342/?hl=es" target="_blank">
+            <i class="fa-solid fa-people-arrows fa-2x"></i>
+            <p>FLASH FRIENDS</p>
+        </a>
+
+        <a class="centrar" href="https://www.instagram.com/stories/highlights/18206843491197373/?hl=es" target="_blank">
+            <i class="fa-solid fa-truck-fast fa-2x"></i>
+            <p>DELIVERY</p>
+        </a>
+
+        <a class="centrar" href="https://www.instagram.com/stories/highlights/18090262219290048/?hl=es" target="_blank">
+            <i class="fa-solid fa-location-crosshairs fa-2x"></i>
+            <p>UBICACIÓN</p>
+        </a>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
 
 
     <script src="https://kit.fontawesome.com/a7fc31cc6a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="public/js/script-index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
 </body>
 </html>

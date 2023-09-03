@@ -1,6 +1,6 @@
 /*Importamos la fuente*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Kanit:ital,wght@1,200&display=swap');
 
 
 /*:::::::::::::::::::::::::::::::::::NAVBAR:::::::::::::::::::::::::::::::::::*/
@@ -15,22 +15,37 @@
     font-size: 16px;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 i svg{
     width: 100%;
 }
 
+.centrar{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
 /*Damos color al fondo*/
 body{
-    background-color: #FAFAFA;
+    background-color: rgb(15, 15, 15) !important;
 }
 
 .label{
     display: inline-block;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 /*Damos posicionamiento al contenedor del nav y sus elementos internnos*/
 .contenedor-nav{
-    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -38,14 +53,13 @@ body{
     padding: 5px 30px;
     background-color: #0F0F0F;
     color: hsl(0, 0%, 100%);
-    z-index: 1000;
 }
 
 /*Damos ancho a ciertos elementos utilizando selectores*/
 .lista-enlaces li > label,
 .lista-enlaces li > a,
 .log-Reg a{
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 /*Brindamos estilos a hover de algunos elementos*/
@@ -103,6 +117,7 @@ body{
     align-items: center;
     gap: 40px;
     flex-direction: row;
+    margin-bottom: 0 !important;
 }
 
 /*Posición relativa*/
@@ -111,7 +126,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /*Escondemos checks de selectores*/
@@ -137,6 +151,11 @@ body{
     display: block;
     width: auto;
     margin: 15px;
+    font-weight: 900;
+}
+
+.caja-select a:hover{
+    color: black;
 }
 
 /*Para que el posicionamiento inicie desde la derecha*/
@@ -181,24 +200,6 @@ body{
     text-align: left;
 }
 
-/*Contenedores para separar los íconos del texto y centrar*/
-.con-i{
-    width: 30%;
-    text-align: center;
-    color: black;
-    margin-right: 10px;
-}
-
-.con-a{
-    width: 70%;
-    text-align: left;
-}
-
-/*Damnos margen a la derecha del contenedor logo*/
-.contenedor-logo{
-    margin-right: 70px;
-}
-
 /*Tamaño de imagen*/
 .logo img{
     width: 20%;
@@ -213,13 +214,17 @@ body{
     gap: 40px;
 }
 
+.log-Reg a:hover{
+    border-color: white !important;
+}
+
 .check-responsive{
     display: none;
 }
 
-.check-responsive{
-    color: white;
-    font-size: 25px;
+.check-responsive label i{
+    color: white !important;
+    font-size: 25px !important;
 }
 
 /*Creamos un div que ocupe toda la pantalla y le damos transición y un color oscuro, 
@@ -242,6 +247,84 @@ opciones del nav (móvil)*/
     display: none;
 }
 
+.ancho-log-mv{
+    width: 40%;
+}
+
+/*:::::::::::::::::::::::::::::::::::Slider:::::::::::::::::::::::::::::::::::*/
+
+.slider{
+    height: calc(100vh - 70px);
+}
+
+.carousel-img{
+    height: calc(100vh - 70px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.img-1{
+    background-image: url("/public/img/img-slider-1.png");
+}
+
+.img-2{
+    background-image: url("/public/img/img-slider-2.png");
+}
+
+.img-3{
+    background-image: url("/public/img/img-slider-3.png");
+}
+
+/*:::::::::::::::::::::::::::::::::::Enlaces:::::::::::::::::::::::::::::::::::*/
+/* Enlaces */
+div.enlaces{
+    width: 80%;
+    height: auto;
+    margin: 70px auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px solid hsl(0, 0%, 41%);
+    border-bottom: 1px solid hsl(0, 0%, 41%);
+}
+
+div.enlaces a{
+    display: inline-block;
+    position: relative;
+    padding: 5px 15px;
+    margin: 20px;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    font-size: 35px;
+    min-width: 120px !important;
+    height: 120px !important;
+    color: hsl(0, 0%, 41%);
+}
+
+div.enlaces a:hover{
+    /*box-shadow: 2px 2px 15px rgba(105, 105, 105,.3),
+                -2px -2px 15px rgba(105, 105, 105, .3);*/
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, .5),
+                -2px -2px 15px rgba(255, 255, 255, .5);
+    color: white;
+}
+
+div.enlaces a p{
+    position: absolute;
+    bottom: -55px;
+    font-size: 25px;
+    color: hsl(0, 0%, 41%);
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+div.enlaces a:hover p{
+    color: white;
+}
 
 /*Responsive Móvil*/
 @media screen and (max-width: 767px) {
@@ -255,6 +338,7 @@ opciones del nav (móvil)*/
         top: 0;
         width: 55%;
         height: 100vh;
+        overflow: scroll;
         /*transition: all 0.3s;*/
     }
 
@@ -272,10 +356,9 @@ opciones del nav (móvil)*/
     }
 
     .cerrar{
-        display: block;
         padding: 10px;
         display: flex;
-        justify-content: right;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -316,4 +399,8 @@ opciones del nav (móvil)*/
         width: auto;
     }
 
+    .contenedor-nav a:hover,
+    .contenedor-nav .label:hover{
+        color: hsl(0, 0%, 8%);
+    }
 }
