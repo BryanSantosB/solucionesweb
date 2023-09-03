@@ -257,24 +257,18 @@ opciones del nav (móvil)*/
     height: calc(100vh - 70px);
 }
 
-.carousel-img{
-    height: calc(100vh - 70px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+.desktop{
+    display: block;
 }
 
-.img-1{
-    background-image: url("/public/img/img-slider-1.png");
+.movil{
+    display: none;
 }
 
-.img-2{
-    background-image: url("/public/img/img-slider-2.png");
+.carousel-item img{
+    width: 100%;
 }
 
-.img-3{
-    background-image: url("/public/img/img-slider-3.png");
-}
 
 /*:::::::::::::::::::::::::::::::::::Enlaces:::::::::::::::::::::::::::::::::::*/
 /* Enlaces */
@@ -403,4 +397,13 @@ div.enlaces a:hover p{
     .contenedor-nav .label:hover{
         color: hsl(0, 0%, 8%);
     }
+
+    .desktop{
+        display: none;
+    }
+    
+    .movil{
+        display: block;
+    }
+
 }
