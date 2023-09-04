@@ -320,6 +320,81 @@ div.enlaces a:hover p{
     color: white;
 }
 
+
+/*:::::::::::::::::::::::::::::::::::Enlaces:::::::::::::::::::::::::::::::::::*/
+
+div.contenedor-menu{
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+div.contenedor-menu-flex{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+div.menu-item{
+    padding: 0;
+    width: 260px;
+    margin: 15px;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
+div.menu-item img:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+div.menu-item p{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+div.img-menu-item{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+div.img-menu-item img{
+    width: 100%;
+    max-height: 300px;
+}
+
+div.descripcion-menu{
+    background-color: rgba(105, 105, 105, .1);
+}
+
+/* Botones */
+div.boton{
+    padding: 10px;
+    width: 100%;
+}
+
+div.boton button{
+    padding: 8px 8px;
+    border-radius: 15px;
+    background-color: #ba0d23;
+    color: white;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+
+
 /*Responsive Móvil*/
 @media screen and (max-width: 767px) {
     .contenedor-enlaces{
@@ -333,6 +408,7 @@ div.enlaces a:hover p{
         width: 55%;
         height: 100vh;
         overflow: scroll;
+        z-index: 1001;
         /*transition: all 0.3s;*/
     }
 
@@ -406,4 +482,7 @@ div.enlaces a:hover p{
         display: block;
     }
 
+    div.menu-item{
+        width: 250px;
+    }
 }
