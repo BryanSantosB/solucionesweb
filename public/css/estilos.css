@@ -19,14 +19,14 @@ a{
     text-decoration: none !important;
 }
 
-i svg{
-    width: 100%;
-}
-
 .centrar{
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+}
+
+.columnas{
+    flex-direction: column;
 }
 
 /*Damos color al fondo*/
@@ -36,6 +36,10 @@ body{
 
 .label{
     display: inline-block;
+}
+
+p{
+    margin-bottom: 0 !important; 
 }
 
 header{
@@ -126,6 +130,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.lista-enlaces label span{
+    margin-right: 5px;
 }
 
 /*Escondemos checks de selectores*/
@@ -321,7 +329,7 @@ div.enlaces a:hover p{
 }
 
 
-/*:::::::::::::::::::::::::::::::::::Enlaces:::::::::::::::::::::::::::::::::::*/
+/*:::::::::::::::::::::::::::::::::::MENÚ:TARJETAS:::::::::::::::::::::::::::::::::::*/
 
 div.contenedor-menu{
     width: 90%;
@@ -392,6 +400,93 @@ div.boton button{
     font-weight: 500;
     border: 1px solid black;
 }
+
+
+/*:::::::::::::::::::::::::::::::::::FOOTER:::::::::::::::::::::::::::::::::::*/
+footer.pie-pagina{
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+    border-top: 1px solid hsl(0, 0%, 41%);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 20px 40px;
+    margin-top: 70px;
+}
+
+.footer-enlaces{
+    width: 25%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer-enlaces ul{
+    padding-left: 0;
+}
+
+.footer-enlaces input{
+    display: none;
+}
+
+.ft-titulo{
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    position: relative;
+}
+
+.ft-titulo i{
+    position: absolute;
+    top: 3.5px;
+    left: -20px;
+}
+
+.footer-enlaces a{
+    color: hsl(0, 0%, 49%);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.footer-enlaces img{
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.footer-enlaces a:hover{
+    color: white;
+    text-decoration: underline !important;
+    text-shadow: 2px 2px 10px gray;
+}
+
+.contenedor-logo-footer{
+    position: absolute;
+    right: 60px;
+    bottom: 30px;
+    width: 140px;
+    text-align: center;
+}
+
+.derechos{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    height: 6vh;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -484,5 +579,28 @@ div.boton button{
 
     div.menu-item{
         width: 250px;
+    }
+
+    .footer-enlaces{
+        width: 100%;
+    }
+
+    .ft-titulo{
+        width: 100%;
+    }
+
+    .centrar .ft-titulo{
+        text-align: center;
+    }
+
+    .footer-enlaces #ul-ft-1,
+    .footer-enlaces #ul-ft-2{
+        display: none;
+        text-align: left;
+    }
+
+    footer.pie-pagina{
+        flex-direction: column;
+        align-items: center;
     }
 }

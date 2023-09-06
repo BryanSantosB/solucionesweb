@@ -15,6 +15,12 @@ const check_res = document.getElementById("check-res");
 const menu = document.getElementById("contenedor-en");
 const overlay = document.getElementById("oscuro");
 
+//Select-Footer
+const check_ft1 = document.getElementById("ft-1");
+const check_ft2 = document.getElementById("ft-2");
+const ul_ft1 = document.getElementById("ul-ft-1");
+const ul_ft2 = document.getElementById("ul-ft-2");
+
 //Cambiar ícono del elemento select y mostrar sus opciones
 function cambiarIconoMostrarOpciones(check, i1, i2, caja){
     if(check.checked){
@@ -47,6 +53,14 @@ function oscuro() {
     }
 }
 
+function comprobarCheckFooter(check, ul_ft){
+    if(check.checked===false && window.innerWidth <= 767){
+        ul_ft.style.display = "none";
+    }else{
+        ul_ft.style.display = "block";
+    }
+}
+
 //Eventos select
 check1.addEventListener("change", function(){
     cambiarIconoMostrarOpciones(check1, i_1_1,i_2_1 ,caja_opciones1);
@@ -62,6 +76,15 @@ check_res.addEventListener("change", function(){
     oscuro();
 });
 
+//Evento del check footer
+check_ft1.addEventListener("change", function(){
+    comprobarCheckFooter(check_ft1, ul_ft1);
+});
+
+check_ft2.addEventListener("change", function(){
+    comprobarCheckFooter(check_ft2, ul_ft2);
+});
+
 //Evento al recargar la página o redimensionar
 window.addEventListener('load', function() { //Evento al cargar página
         
@@ -69,6 +92,8 @@ window.addEventListener('load', function() { //Evento al cargar página
         if (window.innerWidth > 767) {
             check_res.checked = false;
             comprobarCheck();
+            comprobarCheckFooter(check_ft1, ul_ft1);
+            comprobarCheckFooter(check_ft2, ul_ft2);
             oscuro();
         }
     }
