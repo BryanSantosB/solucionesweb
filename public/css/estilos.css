@@ -604,3 +604,23 @@ footer.pie-pagina{
         align-items: center;
     }
 }
+
+
+/*:::::::::::Boton Whatspp::::::::::*/
+.whatsapp-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    transition: 1s;
+}
+.whatsapp-button a i{
+    font-size: 50px;
+}
+
+.whatsapp-button:hover{
+    transition: 2s;
+    scale: 1.5;
+}
+
+
