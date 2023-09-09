@@ -628,6 +628,14 @@ footer.pie-pagina{
         flex-direction: column;
         align-items: center;
     }
+
+    #titulo-menu{
+        font-size: 20px;
+    }
+
+    .contenedor-titulo-menu img{
+        width: 15px;
+    }
 }
 
 
