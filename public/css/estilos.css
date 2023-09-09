@@ -506,9 +506,48 @@ footer.pie-pagina{
 
 
 
+/*:::::::::::::::::::::::FAQ ::::::::::::::::::::::::*/
+.preguntas-titulo{
+    text-align: center;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
 
+.preg-tit-img{
+    width: 30px;
+}
+.preguntas-frec{
+    width: 80%;
+    height: auto;
+    margin: 70px auto;
+    padding: 40px;
+    border-top: 1px solid hsl(0, 0%, 60%);
+    border-bottom: 1px solid hsl(0, 0%, 60%);
+}
 
+.accordion-item{
+    background-color: #0F0F0F !important;
+    border-bottom: none !important;
+}
 
+.accordion-button{
+    border-radius: 10px !important;
+    color: white !important;
+    font-weight: bold;
+    background-color: transparent !important;
+    box-shadow: 0 0 5px 1px rgb(151, 35, 35) !important;
+}
+button.accordion-button.collapsed{
+    border: 1px solid hsl(0, 0%, 60%) !important;
+    box-shadow: 0 0 5px 1px black !important;
+    
+}
+
+.accordion-body{
+    color: white;
+}
 
 
 
@@ -634,6 +673,14 @@ footer.pie-pagina{
     }
 
     .contenedor-titulo-menu img{
+        width: 15px;
+    }
+
+    .preguntas-titulo{
+        font-size: 20px;
+    }
+
+    .preg-tit-img{
         width: 15px;
     }
 }
