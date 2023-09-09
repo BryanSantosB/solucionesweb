@@ -328,6 +328,19 @@ div.enlaces a:hover p{
 
 /*:::::::::::::::::::::::::::::::::::MENÚ:TARJETAS:::::::::::::::::::::::::::::::::::*/
 
+#titulo-menu{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.contenedor-titulo-menu img{
+    width: 30px;
+}
+
 div.contenedor-menu{
     width: 90%;
     margin: 30px auto;
